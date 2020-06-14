@@ -1,0 +1,55 @@
+.hero-header {
+  background-image: url(../images/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.hero-header__wrapper {
+  text-align: center;
+  padding-top: 30vh;
+}
+
+.site-title {
+  font-family: 'Gotham Bold', sans-serif;
+  font-size: rem(152);
+  text-transform: uppercase;
+  letter-spacing: -7px;
+}
+
+.site-description {
+  font-family: 'Gotham Medium', sans-serif;
+  text-transform: uppercase;
+  font-size: rem(25);
+  letter-spacing: 17px;
+  color: $accent-color;
+  margin-bottom: 102px;
+
+  &__link {
+    color: $accent-color;
+    text-decoration: none;
+  }
+}
+
+.scroll-box {
+  &__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8125rem;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+  &__btn {
+    width: 66px;
+    height: 66px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    color: $main-color;
+    cursor: pointer;
+  }
+}
+
+.fa-angle-down {
+  font-size: rem(28);
+}

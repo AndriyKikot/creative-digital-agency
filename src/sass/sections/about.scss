@@ -1,0 +1,58 @@
+.about {
+  background-color: $accent-color;
+  padding-top: 170px;
+  padding-bottom: 126px;
+}
+
+.section-title--about {
+  margin-bottom: 140px;
+  &:before {
+    content: 'W';
+    color: rgba(255, 255, 255, 0.18);
+  }
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 270px;
+    text-align: center;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 133px;
+      height: 133px;
+      border-radius: 50%;
+      background-color: #2e85aa;
+      margin: 0 auto 14px;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    &-title {
+      font-size: rem(18);
+      font-family: 'Gotham Medium', sans-serif;
+      text-transform: uppercase;
+      line-height: 2.25rem;
+      margin-bottom: 24px;
+    }
+
+    &-description {
+      font-size: rem(15);
+      line-height: 24px;
+    }
+    &--write::before {
+      background-image: url(../images/agency/icon-write.png);
+    }
+    &--search::before {
+      background-image: url(../images/agency/icon-search.png);
+    }
+    &--think::before {
+      background-image: url(../images/agency/icon-think.png);
+    }
+  }
+}

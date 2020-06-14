@@ -1,0 +1,72 @@
+.feature {
+  background-image: url(../images/feature/feature_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 950px;
+  background-attachment: fixed;
+  padding-top: 100px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__inner {
+    max-width: 500px;
+    padding-left: 12px;
+  }
+}
+
+.feature__wrapper-item--progress {
+  width: 50%;
+}
+
+.feature__wrapper-item--img {
+  margin-left: 134px;
+}
+
+.feature-item {
+  &__title {
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: rem(25);
+    line-height: 36px;
+    margin-bottom: 34px;
+  }
+  &__description {
+    font-size: rem(15);
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-bottom: 70px;
+  }
+}
+
+.wrapper__img {
+  background-image: url(../images/feature/phone.png);
+  width: 390px;
+  display: block;
+  height: 651px;
+}
+
+.progress-bar {
+  &__item {
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: rem(15);
+    line-height: 24px;
+    text-transform: uppercase;
+    background-color: $accent-color;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    &:not(:last-of-type) {
+      margin-bottom: 24px;
+    }
+    &--design {
+      width: 370px;
+    }
+    &--code {
+      width: 400px;
+    }
+    &--layout {
+      width: 428px;
+    }
+  }
+}

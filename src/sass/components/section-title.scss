@@ -1,0 +1,17 @@
+.section-title {
+  font-family: 'Gotham Medium', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: rem(38);
+  position: relative;
+
+  &:before {
+    display: block;
+    position: absolute;
+    font-size: rem(248);
+    left: 50%;
+    top: -130px;
+    transform: translateX(-50%);
+    font-family: 'Roboto Condensed Bold', sans-serif;
+  }
+}
